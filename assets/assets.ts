@@ -35,8 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import { StaticImageData } from 'next/image';
 
-export const assets = {
+export const assets: Assets = {
     user_image,
     code_icon,
     code_icon_dark,
@@ -76,7 +77,7 @@ export const assets = {
     right_arrow_bold_dark
 };
 
-export const workData = [
+export const workData: WorkData[] = [
     {
         title: 'Frontend project',
         description: 'Web Design',
@@ -99,19 +100,65 @@ export const workData = [
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
-
-export const infoList = [
+export const infoList:InfoList[] = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
-export const toolsData = [
+export const toolsData: StaticImageData[] = [
     assets.vscode, assets.mongodb, assets.figma, assets.git
 ];
+
+interface Assets {
+    user_image: StaticImageData,
+    code_icon: StaticImageData,
+    code_icon_dark: StaticImageData,
+    edu_icon: StaticImageData,
+    edu_icon_dark: StaticImageData,
+    project_icon: StaticImageData,
+    project_icon_dark: StaticImageData,
+    vscode: StaticImageData,
+    firebase: StaticImageData,
+    figma: StaticImageData,
+    git: StaticImageData,
+    mongodb: StaticImageData,
+    right_arrow_white: StaticImageData,
+    logo: StaticImageData,
+    logo_dark: StaticImageData,
+    mail_icon: StaticImageData,
+    mail_icon_dark: StaticImageData,
+    profile_img: StaticImageData,
+    download_icon: StaticImageData,
+    hand_icon: StaticImageData
+    header_bg_color: StaticImageData
+    moon_icon: StaticImageData
+    sun_icon: StaticImageData
+    arrow_icon: StaticImageData
+    arrow_icon_dark: StaticImageData
+    menu_black: StaticImageData
+    menu_white: StaticImageData
+    close_black: StaticImageData
+    close_white: StaticImageData
+    web_icon: StaticImageData,
+    mobile_icon: StaticImageData,
+    ui_icon: StaticImageData,
+    graphics_icon: StaticImageData,
+    right_arrow: StaticImageData,
+    send_icon: StaticImageData,
+    right_arrow_bold: StaticImageData,
+    right_arrow_bold_dark: StaticImageData
+}
+
+interface WorkData {
+    title: String,
+    description: String,
+    bgImage: String
+}
+
+interface InfoList {
+    icon: StaticImageData,
+    iconDark: StaticImageData,
+    description: String,
+    title: String
+}
