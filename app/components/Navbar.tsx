@@ -14,9 +14,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between'>
-        <a href='#top' >
-            <Image src={assets.logo} alt="logo" className='cursos-pointer w-28 h-auto mr-14 bg-white' />
+      <nav className='w-full flex items-center justify-center fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between'>
+        <a href='#top'>
+            <Image src={assets.logo} alt="logo" className='flex bg-white cursor-pointer h-24 w-auto md:h-32 lg:mr-14' />
         </a>
         <ul className='hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
             <li><a className='font-Ovo' href='#top'>Home</a></li>

@@ -1,10 +1,12 @@
 'use client'
+import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-red-300">
       <Navbar/>
+      <Header/>
     </div>
   );
 }
