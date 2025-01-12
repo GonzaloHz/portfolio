@@ -81,22 +81,22 @@ export const workData: WorkData[] = [
     {
         title: 'Frontend project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: 'work-1.png',
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
-        bgImage: '/work-2.png',
+        bgImage: 'work-2.png',
     },
     {
         title: 'Photography site',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: 'work-3.png',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        bgImage: 'work-4.png',
     },
 ]
 
@@ -150,10 +150,10 @@ interface Assets {
     right_arrow_bold_dark: StaticImageData
 }
 
-interface WorkData {
+export interface WorkData {
     title: String,
     description: String,
-    bgImage: String
+    bgImage: string
 }
 
 interface InfoList {
