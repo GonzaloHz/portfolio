@@ -36,7 +36,6 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import { StaticImageData } from 'next/image';
-// import Imagen1 from './public/work-1.png'
 
 export const assets: Assets = {
     user_image,
