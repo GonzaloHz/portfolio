@@ -4,12 +4,12 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div id='about' className='w-full px-[12%] py-10 scroll-mt-20 flex flex-col gap-8'>
+    <div id='about' className='w-full px-[10%] py-10 scroll-mt-20 flex flex-col gap-8'>
             <h4 className='text-center mb-2 text-lg font-Ovo'>Introduction</h4>
             <h2 className='text-center text-5xl font-Ovo'>About me</h2>
         <div className='flex flex-col lg:flex-row items-center gap-20 '>
             <div className='w-full sm:rounded-3xl lg: max-w-96'>
-                <Image src={assets.profile_img} alt='profile image' className=' bg-gray-500 w-full rounded-3xl '/>
+                <Image src={assets.profile_img} alt='profile image' className='bg-gray-500 w-full rounded-3xl'/>
             </div>
             <div className='flex flex-col w-full gap-6 lg:max-w-[60%]'>
                 <p className='mb-10 max-w-2xl font-Ovo'>I am a full stack developer with frontend orientation, I also have training in web design and experience working with Javascript, NodeJS, React, Redux, SQL, among other technologies in the sector. As a Biomedical Engineering student, I have developed additional skills that have allowed me to successfully enter the IT industry.
@@ -17,7 +17,7 @@ const About = () => {
                 <ul className='flex flex-wrap gap-6 lg:flex-nowrap'>
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
                         <li key={index} className='border-[0.5px] border-gray-400 rounded-xl w-full p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black lg:w-[30%]'>
-                            <Image src={icon} alt={title} className='w-7 mt-3'/>
+                            <Image src={icon} alt={`${title}`} className='w-7 mt-3'/>
                             <h3 className='my-4 font-semibold text-gray-700'>{title}</h3>
                             <p className='text-gray-600 text-sm'>{description}</p>
                         </li>
