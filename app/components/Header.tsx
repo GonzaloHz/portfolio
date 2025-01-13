@@ -2,7 +2,7 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 
-const Header = () => {
+const Header = ({isDarkMode}:{isDarkMode:boolean}) => {
   return (
     <div className='text-center mx-auto h-screen flex items-center justify-center'>
       <div className='flex flex-col items-center gap-6 md:gap-8 '>
@@ -22,13 +22,13 @@ const Header = () => {
             </div>
         </h1>
         <div className='flex flex-col sm:flex-row items-center gap-4 mt-4 lg:mt-8'>
-            <a href='#contact' className='flex gap-4 border border-white items-center rounded-full px-10 py-3 bg-black text-white hover:bg-white hover:text-black'>
+            <a href='#contact' className='flex gap-4 border border-white items-center rounded-full px-10 py-3 bg-black text-white hover:border hover:border-black hover:bg-white hover:text-black dark:bg-transparent'>
                 Contact me
-                <Image src={assets.right_arrow_white} alt='' className='w-4'/>
+                <Image src={isDarkMode ? assets.right_arrow_white : assets.right_arrow} alt='contact me' className='w-4'/>
             </a>
-            <a href='/resume.pdf' className='flex gap-4 border border-gray-500 items-center rounded-full px-10 py-3 hover:bg-black hover:text-white'>
+            <a href='/GonzaloHernandez-FrontendDeveloper.pdf' download className='flex gap-4 border border-gray-500 items-center rounded-full px-10 py-3 bg-white hover:bg-black hover:text-white dark:text-black'>
                 My resume
-                <Image src={assets.download_icon} alt='' className='w-4'/>
+                <Image src={assets.download_icon} alt='my cv' className='w-4'/>
             </a>
         </div>
       </div>
