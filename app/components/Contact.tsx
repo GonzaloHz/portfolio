@@ -32,7 +32,7 @@ const Contact = () => {
     };
 
   return (
-    <div id='contact' className='h-screen w-full px-[10%] bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto]'>
+    <div id='contact' className='py-10 scroll-mt-20 h-screen w-full px-[10%] bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none'>
       <h4 className='text-center mb-2 text-lg font-Ovo'>
         Connect with me
       </h4>
@@ -44,11 +44,11 @@ const Contact = () => {
       </p>
       <form onSubmit={onSubmit} className='flex flex-col gap-6 w-full'>
         <div className='flex flex-col lg:gap-6 lg:flex-row'>
-            <input name='name' type='text' placeholder='Enter your name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6'/>
-            <input name='email' type='email' placeholder='Enter your email' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6'/>
+            <input name='name' type='text' placeholder='Enter your name' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90'/>
+            <input name='email' type='email' placeholder='Enter your email' required className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90'/>
         </div>
-            <textarea name='message' rows={6} placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6'/>
-            <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>
+            <textarea name='message' rows={6} placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90'/>
+            <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'>
                 Submit now
                 <Image src={assets.right_arrow_white} alt='submit now' className='w-4'/>
             </button>
