@@ -9,7 +9,9 @@ const Footer = ({isDarkMode}:{isDarkMode:boolean}) => {
       <div className='text-center flex flex-col items-center'>
         <motion.div
         whileHover={{scale:1.1}}>
-          <Image src={isDarkMode ? assets.logo_dark : assets.logo} title={isDarkMode ? 'I like ham, can you help me buy little bit?' : 'I like ice cream, can you help me buy a little bit?'} alt='logo' className='w-36 mt-4 lg:mt-0'/>
+          <Image src={isDarkMode ? assets.logo_dark : assets.logo} 
+          // title={isDarkMode ? 'I like ham, can you help me buy a little bit?' : 'I like ice cream, can you help me buy a little bit?'} 
+          alt='logo' className='w-36 mt-4 lg:mt-0'/>
         </motion.div>
         <div className='w-max flex items-center gap-2 mx-auto'>
             <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='email' className='w-6'/>
