@@ -5,8 +5,6 @@ import { motion } from 'motion/react'
 
 const Contact = () => {
 
-    const publicKey = process.env.PU
-
     const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
