@@ -27,14 +27,15 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
-import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import tailwind from './tailwind.png';
+import craftcms from './craftcms.png';
+import postgreSQL from './postgreSQL.png';
+import gcolab from './gcolab.png';
+import android_studio from './android-studio.png';
 import { StaticImageData } from 'next/image';
 
 export const assets: Assets = {
@@ -67,47 +68,43 @@ export const assets: Assets = {
     menu_white,
     close_black,
     close_white,
-    web_icon,
-    mobile_icon,
-    ui_icon,
-    graphics_icon,
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    tailwind,
+    craftcms,
+    postgreSQL,
+    gcolab,
+    android_studio
 };
 
 export const workData: WorkData[] = [
     {
-        title: 'Frontend project',
+        title: 'Wine E-Commerce',
         description: 'Web Design',
         bgImage: 'work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Poke App',
+        description: 'SPA',
         bgImage: 'work-2.png',
     },
     {
-        title: 'Photography site',
+        title: 'My Portfolio',
         description: 'Web Design',
         bgImage: 'work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: 'work-4.png',
-    },
+    }
 ]
 
 export const infoList:InfoList[] = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'JavaScript, ReactJs, NextJs, NodeJs, SQL, NoSQL, HTML, CSS' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Future Computer and Biomedical Engineer' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData: StaticImageData[] = [
-    assets.vscode, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.mongodb, assets.figma, assets.git, assets.tailwind, assets.craftcms, assets.postgreSQL, assets.gcolab, assets.android_studio
 ];
 
 interface Assets {
@@ -130,24 +127,25 @@ interface Assets {
     mail_icon_dark: StaticImageData,
     profile_img: StaticImageData,
     download_icon: StaticImageData,
-    hand_icon: StaticImageData
-    header_bg_color: StaticImageData
-    moon_icon: StaticImageData
-    sun_icon: StaticImageData
-    arrow_icon: StaticImageData
-    arrow_icon_dark: StaticImageData
-    menu_black: StaticImageData
-    menu_white: StaticImageData
-    close_black: StaticImageData
-    close_white: StaticImageData
-    web_icon: StaticImageData,
-    mobile_icon: StaticImageData,
-    ui_icon: StaticImageData,
-    graphics_icon: StaticImageData,
+    hand_icon: StaticImageData,
+    header_bg_color: StaticImageData,
+    moon_icon: StaticImageData,
+    sun_icon: StaticImageData,
+    arrow_icon: StaticImageData,
+    arrow_icon_dark: StaticImageData,
+    menu_black: StaticImageData,
+    menu_white: StaticImageData,
+    close_black: StaticImageData,
+    close_white: StaticImageData,
     right_arrow: StaticImageData,
     send_icon: StaticImageData,
     right_arrow_bold: StaticImageData,
-    right_arrow_bold_dark: StaticImageData
+    right_arrow_bold_dark: StaticImageData,
+    tailwind:StaticImageData,
+    craftcms:StaticImageData,
+    postgreSQL: StaticImageData,
+    gcolab:StaticImageData,
+    android_studio:StaticImageData
 }
 
 export interface WorkData {
