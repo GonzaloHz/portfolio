@@ -1,11 +1,11 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'motion/react'
 
 const Contact = () => {
 
-    const [result, setResult] = React.useState("");
+    const [result, setResult] = useState<String>("");
 
     const onSubmit = async (event) => {
       event.preventDefault();
@@ -55,7 +55,7 @@ const Contact = () => {
       whileInView={{opacity:1}}
       transition={{delay:0.7, duration:0.5}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I'd love to hear from you! If you have any questions, comments, feedback or just want to know how Tosty and Simon(my cats) are doing, please use the form below.
+        I&apos;d love to hear from you! If you have any questions, comments, feedback or just want to know how Tosty and Simon(my cats) are doing, please use the form below.
       </motion.p>
       <motion.form
       initial={{opacity:0}}
