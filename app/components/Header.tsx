@@ -19,7 +19,7 @@ const Header = ({isDarkMode}:{isDarkMode:boolean}) => {
         whileInView={{ y:0, opacity:1 }}
         transition={{duration:0.6, delay:0.3}}
         className='flex gap-2 text-lg md:text-2xl mb-3 font-Ovo'>
-            Hi! I'm Gonzalo Hernandez
+            Hi! I&apos;m Gonzalo Hernandez
             <Image src={assets.hand_icon} alt='' className='w-6'/>
         </motion.h3>
         <motion.h1
