@@ -2,15 +2,18 @@ import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { motion } from 'motion/react'
+import { useRef } from 'react'
 
 const Contact = () => {
 
+    const ref = useRef<HTMLFormElement>(null)
+
     const [result, setResult] = useState<string>("");
 
-    const onSubmit = async (event) => {
+    const onSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       setResult("Sending...");
-      const formData = new FormData(event.target);
+      const formData = new FormData(event.target as HTMLFormElement);
   
       formData.append("access_key", process.env.NEXT_PUBLIC_ACCESS_KEY);
   
@@ -23,7 +26,7 @@ const Contact = () => {
   
       if (data.success) {
         setResult("Form Submitted Successfully");
-        event.target.reset();
+        ref.current?.reset()
       } else {
         console.log("Error", data);
         setResult(data.message);
@@ -58,10 +61,11 @@ const Contact = () => {
         I&apos;d love to hear from you! If you have any questions, comments, feedback or just want to know how Tosty and Simon(my cats) are doing, please use the form below.
       </motion.p>
       <motion.form
+      ref={ref}
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{delay:0.9, duration:0.5}}
-      onSubmit={onSubmit} className='flex flex-col gap-6 w-full'>
+      onSubmit={(e)=>onSubmit(e)} className='flex flex-col gap-6 w-full'>
         <div className='flex flex-col lg:gap-6 lg:flex-row'>
             <motion.input
             initial={{x:-50, opacity:0}}
