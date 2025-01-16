@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 const Contact = () => {
 
-    const [result, setResult] = useState<String>("");
+    const [result, setResult] = useState<string>("");
 
     const onSubmit = async (event) => {
       event.preventDefault();
