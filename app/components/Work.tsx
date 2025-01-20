@@ -15,8 +15,8 @@ const Work = () => {
         Welcome to my web development portfolio! Explore my colection of personal projects showcasing my expertise
       </p>
       <div className='grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-3 dark:text-black'>
-        {workData.map(({title, description, bgImage}, key)=>(
-            <WorkCard key={key} title={title} description={description} bgImage={bgImage} />
+        {workData.map(({title, description, bgImage, urlGH, urlD}, key)=>(
+            <WorkCard key={key} title={title} description={description} bgImage={bgImage} urlGH={urlGH} urlD={urlD} />
         ))}
       </div>
     </div>
