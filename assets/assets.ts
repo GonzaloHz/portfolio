@@ -84,16 +84,22 @@ export const workData: WorkData[] = [
         title: 'Wine E-Commerce',
         description: 'Web Design',
         bgImage: 'work-1.png',
+        urlGH: 'https://github.com/vinoteca-ecommerce/wineEcommerce',
+        urlD: 'https://wine-ecommercew.vercel.app/'
     },
     {
         title: 'Poke App',
         description: 'SPA',
         bgImage: 'work-2.png',
+        urlGH: 'https://github.com/GonzaloHz/PI-POKEMON-HENRY/tree/main/client/src',
+        urlD: 'https://vimeo.com/722710172?turnstile=0.23mNw4lpFmc9HpkXf6s9mQ-fLMOFHQQ5CptaNS4XyMf8LTSDaV2jzyIAfbTmwwW0rbEGX_nB4dy9YZYtzcC_AsqoALFik3ZMZMrL8yCsxj-OjXfNZUDBr0tT0lZLpv6qbPgmZu8T5VNJtAIJiTBgTFGJ2c7vota-02tP4_MBo3i7LhIb4PK5S01s-IBR4-Q_hPpcmp0yrq3g9Re8vO2AENGL5mPD0CmEPKfvt9ggIbERaK88kic5EUF4zn_NYncrtMdSoVJWfoeE5ehq3V2rOLDh_0i1bJYi1--7u3swjDjokAU6fm0owSU-y_6IvswrFmYynFliePTJJ9MUJ_2f_6QISrY98yfoNDi4Cca_Gu4uRODOhr6rIJTubTssV6BX89U8CpJm1JFMRdT0Oz9iwPrm2f65Mx0P7utvam1gX7l6BPZNMFMTZklj_YYiPWsddvuvftug1fVuiv76ZQC6DxSRktm0ftXy4hkDMTdRMvh77Xn06ZN722sa5Q5EwT-3q9p5K-Et_XUhFdEk2t_RM3mHZiJXPfWwUOVJVfvVmU9oNKyLMdItmQM5CpmOxgTyz4vpkoWRl-diJT6UzHIC4dfQQppDh-aqwRAe94f63zBdwgGZg63wC5cOT3GyYbHWSGeqbiyxrS6iAgapn60j4dulaCZbrWPCK5ZIEttFP3GErWdvwxkoCFk0iA_ZwKellEHUVlIqpOa2D1S5Z3a0Emj73hvGLv8emN79b7ebWOaZq_Mpmi81Ui970cSC4xz3unxZEhws8RHSffT5Tq4j9W2UCBl77qpZS9QHxpK1tM-k-BMnkQ8HeS2v8e30WFtzkQVqSRHJH8a8EwDrPiWyOw.-vXxPuwAGQaNV9l6xznvYw.b66950cb96a0101dfb4673fb3cbfa02174624eff8ff5182124dba40d139c85ed'
     },
     {
         title: 'My Portfolio',
         description: 'Web Design',
         bgImage: 'work-3.png',
+        urlGH: 'https://github.com/GonzaloHz/portfolio',
+        urlD: 'https://gonzalohz-portfolio.vercel.app/'
     }
 ]
 
@@ -151,7 +157,9 @@ interface Assets {
 export interface WorkData {
     title: String,
     description: String,
-    bgImage: string
+    bgImage: string,
+    urlGH: string,
+    urlD: string,
 }
 
 interface InfoList {
