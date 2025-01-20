@@ -24,9 +24,9 @@ const About = ({isDarkMode}:{isDarkMode:boolean}) => {
                     ))}
                 </ul>
                 <h4 className='text-gray-700 font-Ovo dark:text-white/80'>Tools I use</h4>
-                <ul className='flex gap-3 items-center sm:gap-6'>
+                <ul className='flex gap-3 items-center flex-wrap sm:gap-6'>
                     {toolsData.map((tool, index)=>(
-                        <li key={index} className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
+                        <li key={index} className='flex items-center justify-center w-12 sm:w-14 aspect-square border bg-white border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500'>
                             <Image src ={tool} alt='tools' className='w-8 sm:w-12'/>
                         </li>
                     ))}
