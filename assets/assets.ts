@@ -36,6 +36,16 @@ import craftcms from './craftcms.png';
 import postgreSQL from './postgreSQL.png';
 import gcolab from './gcolab.png';
 import android_studio from './android-studio.png';
+import reactIcon from './react.svg'; 
+import nodejs from './nodejs.png';
+import nextJS from './nextjs-icon.svg';
+import ts from './typescript.png';
+import sql from './sql.png';
+import reduxIcon from './redux.png';
+import styledComponents from './styledComponents.png';
+import pythonIcon from './pythonIcon.png';
+import jsIcon from './jsIcon.png';
+import reactNativeIcon from './reactNativeIcon.png';
 import { StaticImageData } from 'next/image';
 
 export const assets: Assets = {
@@ -76,7 +86,17 @@ export const assets: Assets = {
     craftcms,
     postgreSQL,
     gcolab,
-    android_studio
+    android_studio,
+    reactIcon,
+    nextJS,
+    nodejs,
+    ts,
+    sql,
+    styledComponents,
+    reduxIcon,
+    pythonIcon,
+    jsIcon,
+    reactNativeIcon
 };
 
 export const workData: WorkData[] = [
@@ -110,7 +130,7 @@ export const infoList:InfoList[] = [
 ];
 
 export const toolsData: StaticImageData[] = [
-    assets.vscode, assets.mongodb, assets.figma, assets.git, assets.tailwind, assets.craftcms, assets.postgreSQL, assets.gcolab, assets.android_studio
+    assets.ts, assets.jsIcon, assets.nextJS, assets.reactIcon, assets.reactNativeIcon, assets.nodejs, assets.sql, assets.reduxIcon, assets.vscode, assets.mongodb, assets.figma, assets.git, assets.tailwind, assets.styledComponents, assets.craftcms, assets.pythonIcon, assets.postgreSQL, assets.gcolab, assets.android_studio
 ];
 
 interface Assets {
@@ -151,7 +171,17 @@ interface Assets {
     craftcms:StaticImageData,
     postgreSQL: StaticImageData,
     gcolab:StaticImageData,
-    android_studio:StaticImageData
+    android_studio:StaticImageData,
+    reactIcon:StaticImageData,
+    nextJS:StaticImageData,
+    nodejs:StaticImageData,
+    ts:StaticImageData,
+    sql:StaticImageData,
+    styledComponents:StaticImageData,
+    reduxIcon:StaticImageData,
+    pythonIcon:StaticImageData,
+    jsIcon:StaticImageData,
+    reactNativeIcon:StaticImageData
 }
 
 export interface WorkData {
